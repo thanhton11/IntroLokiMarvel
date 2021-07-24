@@ -1,0 +1,38 @@
+$primary-font: 'Indie Flower',
+cursive;
+$background-image: url('../image/background.jpeg');
+$text-color: #ffffffdd;
+$background-color:#121212;
+$font-size: 7rem;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $text-color;
+    place-content: center;
+    .name {
+        font-size: $font-size;
+        position: inherit;
+        justify-content: space-between;
+        display: flex;
+        width: 30rem;
+        font-family: $primary-font;
+        p {
+            text-shadow: 0 0 0.3em $text-color, 0 0 0.3em $text-color, 0 0 0.2em $text-color;
+            mix-blend-mode: hard-light;
+        }
+
+    }
+}
